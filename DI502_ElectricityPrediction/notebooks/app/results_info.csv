@@ -1,0 +1,6 @@
+actual_data_paths,predicted_data_paths,plot_paths
+actual_data_fold_2.csv,predicted_data_fold_2.csv,fold_2_plot.png
+actual_data_fold_3.csv,predicted_data_fold_3.csv,fold_3_plot.png
+actual_data_fold_4.csv,predicted_data_fold_4.csv,fold_4_plot.png
+actual_data_fold_5.csv,predicted_data_fold_5.csv,fold_5_plot.png
+actual_data_fold_6.csv,predicted_data_fold_6.csv,fold_6_plot.png

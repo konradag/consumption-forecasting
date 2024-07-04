@@ -1,0 +1,40 @@
+.page-transition-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;  /* Add the transform transition */
+  transform: translateX(-100%);  /* Start the content of the tab off-screen to the left */
+}
+
+.page-transition-container.is-active {
+  opacity: 1;
+  transform: translateX(0);  /* Move the content of the tab back to its original position */
+}
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in-out;  /* Adjust the duration and timing function as needed */
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideIn {
+  animation: slideIn 1s ease-in-out;  /* Adjust the duration and timing function as needed */
+}
+

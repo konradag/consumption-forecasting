@@ -19,6 +19,10 @@ def break_datetime(df):
     df[['year','weekofyear','dayofweek']]= np.uint16(df['utc_timestamp'].dt.isocalendar())
     df['month']= np.uint8(df['utc_timestamp'].dt.month)
     df['hour']= np.uint8(df['utc_timestamp'].dt.hour)
+    df['minute'] = df['utc_timestamp'].dt.minute
+    df['quarter'] = df['minute'] // 15 + 1
+    df.drop(columns=['minute'], inplace=True)
+
     return df
 
 def circular_encode(df, feature, max_value):
